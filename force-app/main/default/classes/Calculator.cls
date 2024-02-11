@@ -4,4 +4,8 @@ public with sharing class Calculator {
         //test
         return a+b;
     }
+    public integer rest(integer a, integer b){
+        //test
+        return a-b;
+    }
 }
