@@ -8,4 +8,8 @@ public with sharing class Calculator {
         //test
         return a-b;
     }
+    public integer mults(integer a, integer b){
+        //test
+        return a*b;
+    }
 }
