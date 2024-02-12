@@ -12,4 +12,8 @@ public with sharing class Calculator {
         //test
         return a*b;
     }
+    public integer division(integer a, integer b){
+        //test
+        return a/b;
+    }
 }
