@@ -36,7 +36,7 @@ node {
 		    //bat "${toolbelt} update"
 		    println('FSE6')
 		    //bat "${toolbelt} auth:logout -u ${HUB_ORG} -p" 
-                 rc = bat returnStatus: true, script: "${toolbelt} auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile ${jwt_key_file} --loglevel DEBUG --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
+                 rc = bat returnStatus: true, script: "${toolbelt} auth:jwt:grant --client-id ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwt-key-file ${jwt_key_file} --log-level DEBUG --setdefaultdevhub --instance-url ${SFDC_HOST}"
             }
 		
             if (rc != 0) { 
